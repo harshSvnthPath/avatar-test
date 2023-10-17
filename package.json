@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "parcel-bundler": "^1.12.5"
+  },
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  }
+}
